@@ -10,3 +10,5 @@ jspm_packages
 
 #dynamodb local
 .dynamodb
+
+.env

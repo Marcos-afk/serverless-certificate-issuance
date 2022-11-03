@@ -6,21 +6,28 @@
   "scripts": {
     "dev": "serverless offline",
     "dynamodb:start": "serverless dynamodb start",
-    "dynamodb:install": "serverless dynamodb install"
+    "dynamodb:install": "serverless dynamodb install",
+    "deploy": "serverless deploy --verbose"
   },
   "engines": {
     "node": ">=14.15.0"
   },
   "dependencies": {
     "@middy/core": "^3.6.2",
-    "@middy/http-json-body-parser": "^3.6.2"
+    "@middy/http-json-body-parser": "^3.6.2",
+    "chrome-aws-lambda": "^10.1.0",
+    "dayjs": "^1.11.6",
+    "handlebars": "^4.7.7",
+    "puppeteer-core": "^10.1.0",
+    "serverless-dotenv-plugin": "^4.0.2"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.21.0",
     "@types/aws-lambda": "^8.10.108",
-    "@types/node": "^18.11.8",
+    "@types/node": "^18.11.9",
     "esbuild": "^0.15.12",
     "json-schema-to-ts": "^2.5.5",
+    "puppeteer": "^10.1.0",
     "serverless": "^3.23.0",
     "serverless-dynamodb-local": "^0.2.40",
     "serverless-esbuild": "^1.33.0",
